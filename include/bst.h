@@ -42,7 +42,7 @@ class BST {
         }
         return 1 + std::max(getDepth(root->l), getDepth(root->r));
     }
-public:
+ public:
     BST() : root(nullptr) {}
     void add(const T& value) {
         root = addN(root, value);
