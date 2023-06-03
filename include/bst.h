@@ -40,7 +40,7 @@ class BST {
         if (root == nullptr) {
             return 0;
         }
-        return 1 + std::max(getDepth(root->l), getDepth(root->r));
+        return std::max(getD(root->l), getD(root->r)) + 1;
     }
 
  public:
