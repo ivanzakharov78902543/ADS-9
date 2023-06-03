@@ -18,9 +18,9 @@ class BST {
             root->k = 1;
             root->l = root->r = nullptr;
         } else if (root->value < value) {
-            root->right = addN(root->r, value);
+            root->r = addN(root->r, value);
         } else if (root->value > value) {
-            root->left = addN(root->l, value);
+            root->l = addN(root->l, value);
         } else {
             root->k += 1;
         }
