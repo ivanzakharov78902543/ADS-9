@@ -52,7 +52,7 @@ public:
     }
     int search(const T& value) {
         Node* current = searchN(root, value);
-        if (cur != nullptr) {
+        if (current != nullptr) {
             return current->k;
         } else {
             return 0;
