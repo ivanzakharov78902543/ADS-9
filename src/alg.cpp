@@ -10,7 +10,7 @@ BST<std::string> makeTree(const char* filename) {
     std::ifstream file(filename);
     std::string word;
     if (!file)
-        return 0;
+        std::cout << "error!" << std::endl;;
     while (!file.eof()) {
         char ch = tolower(file.get());
         if (isalpha(ch)) {
